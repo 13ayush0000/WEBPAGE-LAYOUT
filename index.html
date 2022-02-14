@@ -1,0 +1,1039 @@
+<html>
+<head>
+    <title>WEBPAGE</title>
+</head>
+<style>
+    
+
+    body{
+  background: #030321;
+  font-family: Arial;
+
+}
+
+    svg {
+    display: block;
+    font: 8.5em 'Montserrat';
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.text-copy {
+    fill: none;
+    stroke: rgb(255, 255, 255);
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #435c08;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #9dcf14;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #cec222;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #ff0048;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #ffa600;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+    	100% {stroke-dashoffset: -35%;}
+}
+
+
+/*nabbar*/
+
+
+
+
+
+ 
+/*animation*/
+
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 5em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 14em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+
+
+
+/*animation 2*/
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #a7a6a6;
+    color: rgb(0, 0, 0);
+    clip-path: circle(0px at center center);
+  
+
+ 
+    
+    /* clip-path: circle(300px at center center); */
+}
+
+
+
+
+.container {
+    position: relative;
+    margin-top: 200vh;
+    padding: 150px;
+    background: #030321;
+    color: #fff;
+}
+
+.container2 {
+    position: relative;
+    margin-top: 200vh;
+    padding: 500px;
+    background: #030321;
+    color: #fff;
+  
+   
+
+    
+}
+
+
+.container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.innerText {
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 5vw;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.text {
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 5vw;
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    .innerText, .text {
+        font-size: 3.5em;
+
+    }
+
+    .container p {
+        font-size: 1.5em;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        width: 100%;
+    }
+
+    .container h2 {
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+
+
+/*NAVBAR*/
+
+
+nav {
+	margin: 50px auto 0;
+
+	position: relative;
+	width: 600px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 30px;
+	font-size: 0;
+    
+ 
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+
+	text-align: center;
+	color: white;
+	cursor: pointer;
+    font-size: 15px;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 5px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 100px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #68e222;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 130px;
+	left: 470px;
+	background-color: #e67e22;
+}
+
+
+/*SCROLL BAR HIDE*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+/*section 2*/
+
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    clip-path: circle(0px at center center);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none !important;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(13, 14, 13);
+    text-align: center;
+    color: rgb(65, 255, 65);
+    overflow: hidden;
+    /* background: black; */
+}
+
+.box span {
+    font-size: 80px;
+    letter-spacing: 20px;
+}
+
+#letter1 {
+    animation: animLetter1 1s infinite;
+}
+
+#letter2 {
+    animation: animLetter2 1s infinite;
+}
+
+#letter3 {
+    animation: animLetter3 1s infinite;
+}
+
+#letter4 {
+    animation: animLetter4 1s infinite;
+}
+
+@keyframes animLetter1 {
+    0% {
+        font-family: 'Stint Ultra Condensed', cursive;
+    }
+
+    10% {
+        font-family: 'Diplomata SC', cursive;   
+    }
+
+    20% {
+        font-family: 'Bungee Shade', cursive;
+    }
+
+    30% {
+        font-family: 'Seaweed Script', cursive;
+        color: gray;
+    }
+
+    40% {
+        font-family: 'Sevillana', cursive;
+        color: rgb(22, 194, 22);
+    }
+
+    50% {
+        font-family: 'Akronim', cursive;
+        color: orange;
+    }
+
+    60% {
+        font-family: 'Eater', cursive;
+        color: hotpink;
+    }
+
+    70% {
+        font-family: 'Mountains of Christmas', cursive;
+        color: magenta;
+    }
+
+    80% {
+        font-family: 'UnifrakturCook', cursive;
+        color: rgb(65, 255, 65);
+    }
+
+    90% {
+        font-family: 'Monoton', cursive;
+        color: rgb(16, 0, 245);
+    }
+
+    100% {
+        font-family: 'Codystar', cursive;
+        color: gold;
+    }
+}
+
+@keyframes animLetter2 {
+    0% {
+        font-family: 'Dynalight', cursive;
+        color: rgb(0, 157, 255);
+    }
+
+    10% {
+        font-family: 'Cinzel Decorative', cursive;
+        color: #ffffff;
+    }
+
+    20% {
+        font-family: 'Faster One', cursive;
+        color: #ffdf00;
+    }
+
+    30% {
+        font-family: 'Monoton', cursive;
+        color: #7b9095;
+    }
+
+    40% {
+        font-family: 'Press Start 2P', cursive;
+        color: #7b9095;
+    }
+
+    50% {
+        font-family: 'Lobster', cursive;
+        color: #6ba7cc;
+    }
+
+    60% {
+        font-family: 'UnifrakturCook', cursive;
+        color: rgb(65, 255, 65);
+    }
+
+    70% {
+        font-family: 'Stint Ultra Condensed', cursive;
+        color: turquoise;
+    }
+
+    80% {
+        font-family: 'Diplomata SC', cursive;
+        color: violet;
+    }
+
+    90% {
+        font-family: 'Almendra Display', cursive;
+        color: rgb(255, 0, 0);
+    }
+
+    100% {
+        font-family: 'Seaweed Script', cursive;
+        color: yellow;
+    }
+}
+
+@keyframes animLetter3 {
+    0% {
+        font-family: 'Cinzel Decorative', cursive;
+        color: magenta;
+    }
+
+    10% {
+        font-family: 'Dynalight', cursive;
+        color: red;
+    }
+
+    20% {
+        font-family: 'Nosifer', cursive;
+        color: yellow;
+    }
+
+    30% {
+        font-family: 'Seaweed Script', cursive;
+        color: #00fff2;
+    }
+
+    40% {
+        font-family: 'Diplomata SC', cursive;
+        color: yellow;
+    }
+
+    50% {
+        font-family: 'Monofett', cursive;
+        color: rgb(0, 255, 0);
+    }
+
+    60% {
+        font-family: 'Monoton', cursive;
+        color: tomato;
+    }
+
+    70% {
+        font-family: 'Akronim', cursive;
+        color: #6e797c;
+    }
+
+    80% {
+        font-family: 'Press Start 2P', cursive;
+        color: rgb(0, 38, 255);
+    }
+
+    90% {
+        font-family: 'Lobster', cursive;
+        color: springgreen;
+    }
+
+    100% {
+        font-family: 'Stint Ultra Condensed', cursive;
+        color: white;
+    }
+}
+
+@keyframes animLetter4 {
+    0% {
+        font-family: 'Stint Ultra Condensed', cursive;
+        color: springgreen;
+    }
+
+    10% {
+        font-family: 'Dynalight', cursive;
+        color: #7b9095;
+    }
+
+    20% {
+        font-family: 'Flavors', cursive;
+        color: orange;
+    }
+
+    30% {
+        font-family: 'Press Start 2P', cursive;
+        color: #534903;
+    }
+
+    40% {
+        font-family: 'Monoton', cursive;
+        color: palegreen;
+    }
+
+    50% {
+        font-family: 'Codystar', cursive;
+        color: hotpink;
+    }
+
+    60% {
+        font-family: 'Nosifer', cursive;
+        color: lightskyblue;
+    }
+
+    70% {
+        font-family: 'Lobster', cursive;
+        color: #6ba7cc;
+    }
+
+    80% {
+        font-family: 'Almendra Display', cursive;  
+        color: aqua;
+    }
+
+    90% {
+        font-family: 'Cinzel Decorative', cursive;
+        color: rgb(65, 255, 65);
+    }
+
+    100% {
+        font-family: 'Faster One', cursive;
+        color: cyan;
+    }
+}
+
+
+
+
+/*cards*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #696969;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+.btn--block {
+  display: block;
+  width: 100%;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 33.3333%;
+  }
+}
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card:hover .card__image {
+  filter: contrast(100%);
+}
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+@media (min-width: 40rem) {
+  .card__image::before {
+    padding-top: 66.6%;
+  }
+}
+.card__image--flowers {
+  background-image: url();
+}
+.card__image--river {
+  background-image: url(https://cdn1.byjus.com/byjusweb/img/classes/360.svg);
+}
+.card__image--record {
+  background-image: url(https://cdn1.byjus.com/byjusweb/img/classes/otherteacher.svg);
+}
+.card__image--fence {
+  background-image: url(https://cdn1.byjus.com/byjusweb/img/classes/oneteacher1.svg);
+}
+.card__title {
+  color: #00c3ff;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+}
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  color: black;
+}
+
+/*form btn hover effects  */
+.subm:hover{
+
+background-color: rgb(255, 0, 0);
+color: white;
+
+}
+
+.rest:hover{
+background-color: rgb(0, 255, 128);
+color: black;
+}
+
+</style>
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+crossorigin="anonymous">
+
+<body>
+
+
+ 
+  <nav>
+    <a href="#">HOME</a>
+    <a href="#">ABOUT</a>  
+    <a href="#">Contact</a>
+    <a href="#">Login/sign up</a>
+    <a href="#md">CLASSES 👇</a>
+
+    
+                                   
+
+
+        <div class="animation start-home"></div>
+
+        
+   
+  </nav>
+    <svg viewBox="0 0 960 300">
+
+        <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="90%"> MD CLASSES</text>
+        </symbol>
+         
+
+        <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+    </svg>
+
+ 
+
+
+
+
+<div id="main-container">  
+      <div id="scrolltext">
+<p class="line-1 anim-typewriter" style="color: white;">WELCOME TO OUR PAGE !</p>
+</div>
+
+
+    <h3 class="text">Institute of learning</h2>
+    <section id="section">
+      <h3 style="font-size: 30px;letter-spacing: 20px;padding-bottom: 300px;"> JOIN FROM TODAY</h3>
+        <h2 class="innerText">Institute of learning</h2>
+
+    </section>
+ 
+    <div class="container">
+        
+    <div class="section3">
+        <ul class="cards">
+            <li class="cards__item">
+              <div class="card">
+                <div class="card__image card__image--fence"></div>
+                <div class="card__content">
+                  <div class="card__title">One teacher teaches
+                    concepts</div>
+                  <p class="card__text">Concepts are explained by
+                    expert teacher with
+                    the help of rich visuals
+                    and storytelling</p>
+              
+                </div>
+              </div>
+            </li>
+            <li class="cards__item">
+              <div class="card">
+                <div class="card__image card__image--river"></div>
+                <div class="card__content">
+                  <div class="card__title">360° teaching + learning system
+                    that supports the student
+                    after class</div>
+                  <p class="card__text">Comprehensive
+                    teaching + learning
+                    system with homework,
+                    tests, monthly reports and
+                    parent-teacher meetings</p>
+                
+                </div>
+              </div>
+            </li>
+            <li class="cards__item">
+              <div class="card">
+                <div class="card__image card__image--record"></div>
+                <div class="card__content">
+                  <div class="card__title">Other teacher pays
+                    personal attention</div>
+                  <p class="card__text">The second teacher
+                    conducts a class
+                    of 20 students, pays
+                    attention to individual
+                    student's needs making
+                    the sessions interactive
+                    and engaging.</p>
+              
+                </div>
+              </div>
+            </li>
+</ul>
+</div>
+
+
+<table border="0" cellpadding="20px" cellspacing="20px" width="100%" style="padding-top: 50px;">
+    <tr bgcolor="white">
+
+        <th colspan="4">
+           <h1 style="color: rgb(0, 0, 0); letter-spacing: 5px; text-align: center;padding-top: 20px;">Why choose MD Classes?</h1>
+        </th>
+    </tr>
+    <tr>
+        <td align="center">
+                              <b>1).</b>  Two teachers
+                                instead of one!
+        </td>
+        <td align="center">
+            <b>2).</b>  One teacher - teaches
+                                concepts clearly
+        </td>
+
+        <td align="center">                     
+            <b>3).</b>   Another teacher - pays
+                                    personal attention and
+                                     solves student's doubts
+            
+            </td>
+
+            <td align="center">
+
+                                     
+                <b>4).</b>360° teaching +
+                                    learning system
+            </td>
+        </tr>
+</table>        
+
+
+<footer style="padding-top: 100px;">
+    <h1 style="padding-bottom:20px;text-align: center;border-radius: 2; background-color: lightslategray;padding: 5;">Register Here</h1>
+    <table width="100%" border="0"  cellspacing="10"> 
+        <form action="A:\coding\Thankyou.html">
+       <tr>
+            <td align="center" style="color: white;">
+                Name :
+            </td>
+
+            <td>
+                <input type="text" width="20" required placeholder="Please Enter Your Name"> 
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="color: white;">
+               Address :
+            </td>
+
+            <td>
+            <input type="text" size="50" required placeholder="Please Enter Your Residence"> 
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="color: white;">
+                PHONE NO.&nbsp;:
+            </td>
+       
+            <td>
+                <input type="number" size="10" required placeholder="Enter valid Phone No.">
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="color: white;">
+               class :
+            </td>
+
+            <td>
+          <select width="20" required>
+            <option value="">Select class</option> 
+              <option>12<sup>th</sup></option>
+              <option value="+2"> 11<sup>th</sup></option>
+              <option value="+2"> 10<sup>th</sup></option>
+              <option value="+2"> 9<sup>th</sup></option>
+              <option value="+2"> 8<sup>th</sup></option>
+              <option value="+2"> 7<sup>th</sup></option>
+              <option value="+2"> 6<sup>th</sup></option>
+              <option value="+2"> 5 &nbsp;&amp;&nbsp;below<option>
+          </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="color: white;" colspan="2">
+                <hr>
+SUBJECTS:
+<hr>
+            </td>
+        </tr>
+          <tr>
+  
+                <td align="center" style="color: white;">
+                       <input type="radio" name="SUB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For class 12<sup>th</sup>
+                </td>
+           <td>
+              <input type="checkbox" name="HIS" name="SUB">HISTORY<br>
+              <input type="checkbox" name="POL" name="SUB">POLITICAL SCIENCE<br>
+              <input type="checkbox" name="ENG" name="SUB">ENGLISH<br>
+            </td>
+        </tr>
+        <tr>
+  
+            <td align="center" style="color: white;"> 
+                <input type="radio" name="SUB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For class 11<sup>th</sup>
+            </td>
+       <td>
+          <input type="checkbox" name="HIS">HISTORY<br>
+          <input type="checkbox" name="POL">POLITICAL SCIENCE<br>
+          <input type="checkbox" name="ENG">ENGLISH<br>
+        </td>
+    </tr>
+    <tr>
+  
+        <td align="center" style="color: white;"> 
+            <input type="radio" name="SUB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For class 10<sup>th</sup>
+        </td>
+   <td>
+      <input type="checkbox" name="HIS">HISTORY<br>
+      <input type="checkbox" name="POL">POLITICAL SCIENCE<br>
+      <input type="checkbox" name="ENG">ENGLISH<br>
+      <input type="checkbox" name="BIO">BIOLOGY<br>
+      <input type="checkbox" name="PHY">PHYSICS<br>
+      <input type="checkbox" name="CHE">CHEMISTRY<br>
+      <input type="checkbox" name="MTH">MATHS<br>
+    </td>
+</tr>
+<tr>
+    <td align="center" style="color: white;">
+        <input type="radio" name="SUB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For class 5<sup>th</sup>&nbsp;&amp;&nbsp;below
+    </td>
+
+
+    <td>
+<input type="checkbox" name="all">ALL  SUbjects
+
+    </td>
+</tr>
+
+<tr>
+    
+<td align="right">
+  <button type="submit" class="subm" style="padding: 20px ;font-size: 15px; font-weight: bold;">Enroll Details</button> 
+
+   </td>
+<td align="center">
+
+    <button type="reset" class="rest" style="padding: 20px ;font-size: 15px; font-weight: bold;">Reset Form</button> 
+
+</td>
+</tr>
+    </table>   
+    
+    <select id="Objective" form="theForm" name="category" >
+        <option value="pi">Pipi</option>
+        <option value="theta">thethaatha</option>
+        <option value="sigma">sigmama</option>
+    </select>
+ </form>
+
+</footer>
+
+
+<div class="box" id="md">
+    <span id="letter1">M</span>
+    <span id="letter2">D</span>
+    <span id="letter3">&nbsp;</span>
+    <span id="letter4">CLASSES</span>
+</div>
+
+
+
+
+</div>
+</div>
+        
+
+
+
+
+<script>
+
+"use strict";
+
+let section = document.querySelector('section');
+let text = document.querySelector('.text');
+let innerText = document.querySelector('.innerText');
+
+window.addEventListener('scroll', function() {
+    let value = window.scrollY;
+    section.style.clipPath = `circle(${value}px at center center)`;
+    // console.log(value);
+    text.style.left = 100 - value / 5 + `%`;
+    innerText.style.left = 100 - value / 5 + `%`;
+})
+
+</script>
+
+<script>
+
+let p_remove = document.querySelector("#scrolltext p");
+
+window.onscroll = function () {
+    p_remove.remove();
+};
+
+</script>
+
+<script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+</script>
+
+
+
+
+</body>
+    </html>
